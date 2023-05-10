@@ -4,8 +4,6 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 5000;
 require('dotenv').config();
-// 7ppLNacCSl6I7sJF
-// car-doctor
 
 // middleware
 app.use(cors());
@@ -36,7 +34,7 @@ async function run() {
 
 
 
-    
+
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {
